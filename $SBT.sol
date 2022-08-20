@@ -21,7 +21,7 @@ contract CurrencyToken is ERC20 {
         tokensPerClaim = _tokensPerClaim; 
     }
 
-function claim() external payable {
+function claim(uint256) external payable {
     require(ERC721(nft).balanceOf(msg.sender) > hasClaimed[msg.sender]);
     hasClaimed[msg.sender] += 1;
 
