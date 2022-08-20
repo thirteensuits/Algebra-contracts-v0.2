@@ -21,7 +21,7 @@ contract CurrencyToken is ERC20 {
         tokensPerClaim = _tokensPerClaim; 
     }
 
-function mintNftTwo() external payable {
+function claim() external payable {
     require(ERC721(nft).balanceOf(msg.sender) > hasClaimed[msg.sender]);
     hasClaimed[msg.sender] += 1;
 
