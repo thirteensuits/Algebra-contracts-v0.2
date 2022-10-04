@@ -12,7 +12,7 @@ contract BranchNFT is ERC721Enumerable, Ownable {
     
     string public baseURI;
     string public baseExtension = ".json";
-    uint256 public cost = 0.001 ether;
+    uint256 public cost;
     uint256 public maxMintAmount = 10;
     bool public paused = false;
     address payable payment;
@@ -23,9 +23,11 @@ contract BranchNFT is ERC721Enumerable, Ownable {
         string memory _name,
         string memory _symbol,
         string memory _initBaseURI,
-        address _payment
+        address _payment,
+        uint256 _cost
     ) ERC721(_name, _symbol) {
         nft = _nft;
+        setCost(_cost);
         setBaseURI(_initBaseURI);
         payment = payable(_payment);
     }
@@ -133,9 +135,9 @@ contract BranchNFT is ERC721Enumerable, Ownable {
         paused = _state;
     }
 
-    function withdraw(uint256 number) public payable onlyProductOwner() {
+    function withdraw(uint256 x) public payable onlyProductOwner() {
         (bool success, ) = payable(payment).call{
-            value: address(this).balance * (number/this.totalSupply())
+            value: x*cost
         }("");
         require(success);
     }
