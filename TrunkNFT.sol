@@ -11,7 +11,7 @@ contract TrunkNFT is ERC721Enumerable, Ownable {
     string public baseURI;
     string public baseExtension = ".json";
     uint256 public cost;
-    uint256 public maxSupply = 10;
+    uint256 public maxSupply;
     uint256 public maxMintAmount = 10;
     bool public paused = false;
 
@@ -19,10 +19,12 @@ contract TrunkNFT is ERC721Enumerable, Ownable {
         string memory _name,
         string memory _symbol,
         string memory _initBaseURI,
-        uint256 _initcost
+        uint256 _cost,
+        uint256 _maxSupply
     ) ERC721(_name, _symbol) {
         setBaseURI(_initBaseURI);
-        setCost(_initcost);
+        setCost(_cost);
+        setmaxSupply(_maxSupply);
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
@@ -86,6 +88,10 @@ contract TrunkNFT is ERC721Enumerable, Ownable {
     //only owner
     function setCost(uint256 _newCost) public onlyOwner {
         cost = _newCost;
+    }
+
+    function setmaxSupply(uint256 _newmaxSupply) public onlyOwner {
+        maxSupply = _newmaxSupply;
     }
 
     function setmaxMintAmount(uint256 _newmaxMintAmount) public onlyOwner {
