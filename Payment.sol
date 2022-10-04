@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: AGPL-3.0-only
+// SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
 
@@ -6,20 +6,21 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Address.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/Context.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "https://github.com/thirteensuits/Algebra-contracts-v0.2/blob/main/TrunkNFT.sol";
 
 contract PaymentSplitter is Context {
     event PaymentReleased(address to, uint256 amount);
     event PaymentReceived(address from, uint256 amount);
-    ERC721Enumerable internal nft;
+    TrunkNFT internal nft;
     uint256 private _totalReleased;
     uint256 public number;
     mapping(uint256 => uint256) private _released;
     address payable account;
     
-    constructor(ERC721Enumerable _nft) payable {
+    constructor(TrunkNFT _nft) payable {
     nft = _nft;
     account = payable(msg.sender);
-    number = nft.totalSupply();
+    number = nft.maxMintAmount();
     }
     
     receive() external payable virtual {
