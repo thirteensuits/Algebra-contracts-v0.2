@@ -72,7 +72,7 @@ contract PaymentSplitter is Context {
         _totalReleased += payment;
         unchecked {
         for (uint256 i = 0; i < set.length; i++) {
-            _released[set[i]] += payment;
+            _released[set[i]] += payment/set.length;
         }
         }
         Address.sendValue(input, payment);
