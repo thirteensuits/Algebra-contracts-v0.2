@@ -90,4 +90,13 @@ The Payment contracts can also be used to payout commissions for influencers or 
 
 ## How the Smart Contracts Interact
 
+The smart contracts are to be deployed in this order:
+
+-- TrunkNFT.sol
+
+-- Payment.sol (requires address of deployed TrunkNFT.sol)
+
+-- BranchSBT.sol (requires address of deployed TrunkNFT.sol and address of deployed Payment.sol)
+
+-- $SBT.sol (requires address of deployed TrunkNFT.sol and address of deployed BranchSBT.sol)
 
