@@ -92,11 +92,28 @@ The Payment contracts can also be used to payout commissions for influencers or 
 
 The smart contracts are to be deployed in this order:
 
--- TrunkNFT.sol
+  -- TrunkNFT.sol
 
--- Payment.sol (requires address of deployed TrunkNFT.sol)
+  -- Payment.sol (requires address of deployed TrunkNFT.sol)
 
--- BranchSBT.sol (requires address of deployed TrunkNFT.sol and address of deployed Payment.sol)
+  -- BranchSBT.sol (requires address of deployed TrunkNFT.sol and address of deployed Payment.sol)
 
--- $SBT.sol (requires address of deployed TrunkNFT.sol and address of deployed BranchSBT.sol)
+  -- $SBT.sol (requires address of deployed TrunkNFT.sol and address of deployed BranchSBT.sol)
+  
+TrunkNFT.sol determines who owns the product and therefore who can successfully interact with Payment.sol. The product owners are also the Owners of the contracts deployed from BranchSBT.sol, Payment.sol, and $SBT.sol.
 
+Payment.sol divides the proceeds from sales of the product and therefore will be designated as the contract where proceeds from mints from BranchSBT.sol are pushed into.
+
+BranchSBT.sol represents the product and therefore will be designated as the address which identifies which SBTs are eligible to claim from $SBT.sol. Only holders of TrunkNFTs will be able to push the proceeds gathered from mints of BranchSBT.sol to Payment.sol.
+
+$SBT.sol is used in the claim process to issue utility or governance tokens to the consumer for each purchase made (each mint from BranchSBT.sol). No funds are collected in $SBT.sol.
+
+## Conclusion
+
+Thank you for reading. There were many parties that helped with this process and we especially give a shout out to aeto for guiding us through this process.
+
+Collectively, we have produced many consumer products, including both successful and unsuccessful products. In this process, the two most important things we have learned are (i) how valuable the consumer is and (ii) how misguided common narratives are.
+
+We are excited at the prospect of introducing functionalities made possible only by blockchain technology to the consumer space. The smart contracts will certainly need to be improved and audited, but provide a working version of the framework necessary to build the first Web3 consumer product and brand.
+
+We will be the first ones to utilize this framework and gladly invite others to adopt and improve on it as well.
