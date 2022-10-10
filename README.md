@@ -1,4 +1,5 @@
-# Algebra Smart Contracts -- reimagining the commerce of everyday products
+# Algebra Smart Contracts
+# reimagining the commerce of everyday products
 
 This is Version 0.2 of the Algebra Smart Contracts, exploring new and more efficient ways to buy and sell everyday products by re-aligning incentives using blockchain technology.
 
