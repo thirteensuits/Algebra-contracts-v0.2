@@ -74,16 +74,20 @@ How each ownership position is attained can be determined on a case-by-case basi
 
 ## Payment.sol and Payment_Account.sol - trustless paymasters splitting up proceeds
 
+**Payment.sol and its variant Payment_Account.sol are the smart contracts which hold the proceeds from sales of the product (SBT mints from BranchSBT.sol) and split them amongst the product owners (holders of NFTs issued by TrunkNFT.sol).**
+
+Beyond memetic displays and actual responsibilities, ownership needs to have its benefits. The most obvious benefit is the right to dividends. Under traditional structures, even at the best companies, there is always a certain degree of friction and opacity when it comes to dividend payouts. The introduction of the trustless paymaster for dividend payouts, made possible by blockchain technology, is a beautiful innovation that allows ownership to be more actionable and tangible.
+
+Our Payment contracts are unique modifications of PaymentSplitter.sol by OpenZepellin, which splits the cryptocurrency deposited into the contract between different parties at set rates. The original contract requires the deployer to firmly set the addresses of these parties and the rates for how the proceeds should be divided in order to deploy the contract. This does not work for our purposes and was therefore accordingly modified.
+
+Under our framework, the funds due and the ability to withdraw those funds are tied to the NFTs minted from the TrunkNFT smart contract. Each NFT is due an equal portion of the proceeds; for example, if there are 10 NFTs minted from TrunkNFT, then each NFT is due 1/10th of the proceeds.
+
+Payment.sol ties the payout to the specific Token ID of the NFT. The party seeking a payout will input a Token ID and will need to hold the corresponding NFT to successfully withdraw the funds due to that Token ID.
+
+Payment_Account.sol ties the payout to the wallet address of the executing party, determining whether or not the wallet holds the appropriate NFTs and then sending the corresponding amount of funds to the wallet. For example, if the wallet holds 2 of the 10 NFTs, then the wallet will receive 2/10 of the total amount received by the contract.
+
+The Payment contracts can also be used to payout commissions for influencers or affiliates who help sell the product. The whole Algebra framework for transparent access to sales data and provides a trustless means for these collaborators to pull their share of the proceeds. This enables parties to work together without having to worry about whether or not the counterparty will fail to pay them.
+
+## How the Smart Contracts Interact
 
 
-This contract issues BranchSBTs, which are soul-bound tokens that represent the everyday consumer product being bought and sold. Why soul-bound? Because everyday consumer products are not traded or collected; they are bought to be used, and the soul-bound token acts as both the representation and the receipt for the everday consumer product.
-
- - $SBT.sol --
-
-This contract issues ERC-20 tokens that act as loyalty points whenever a BranchSBT is claimed in return for the physical version of the representated product. The tokens can come with some degree of governance or can be used as a currency for limited edition products; the specifics of token utility are up to the merchant, and what the token provides is blockchain functionality to potentially tie the consumer closer to the merchant.
-
- - TrunkNFT.sol -- 
-
-This contract issues TrunkNFTs which represent an ownership position in the everyday product being represented by the BranchSBTs. The ownership position can be attained by being involved in the operations or via investment; again, the specifics can be determined on a  case-by-case basis by the relevant parties. Instead of using ERC-20 tokens to mimic equity ownership, the Algebra framework uses NFTs to mimic something closer to a Board of Directors, where each holder has a certain degree of responsibility and can also more memetically display their ownership if they choose to do so. This does not preclude the possibility of also issuing ERC-20 tokens to represent onwership, or "governance" (can be the $SBT.sol token, for example)
-
- - Payment.sol -- this page is for product owners, who can view and withdraw proceeds from TheMala sales in real-time.
