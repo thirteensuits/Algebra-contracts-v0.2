@@ -36,8 +36,34 @@ Because everyday consumer products are not bought to be traded or collected; the
 
 In addition to acting as the on-chain representative for one unit of the product, the SBT also remains in the wallet of the consumer as a receipt of their purchase.
 
+## $SBT.sol – giving the consumer “skin in the game”
 
- - BranchSBT.sol --
+**$SBT.sol is the smart contract which the consumer (the SBT holder) interacts with when they claim the physical version of the product. The claim process issues $SBT ERC-20 tokens to the consumer and is limited to one initiation for each SBT.**
+
+Before jumping into technical details, let’s take a brief look at the consumer goods market.
+
+The most valuable consumer goods company in the world is Kweichow Moutai (SHA: 600519) with a ~2.4T RMB market cap, equivalent to roughly 340M USD, and 10% higher than LVMH (EPA: MC).
+
+Why?
+
+The retail investor, to whom Moutai has social value, wants a piece of the action; perhaps they cannot afford a bottle of real Moutai, but they nonetheless want “skin the game” and therefore buy the stock. In addition to “believing in the company” and therefore capturing potential financial upside, the retail investor is able to generate the same internal validation that comes from buying a Moutai product. Instead of being able to self-identify as “the person who buys Moutai”, they can self-identify as “the person who owns a piece of Moutai”. Close enough, or maybe even better?
+
+A tremendous driver for the consumption of consumer goods is the sense of identity that the consumer derives from their purchase. This is not limited to luxury goods; we also see this in basic food choices, for example in the identities that are built around one’s aversion to meat or, on the other side, to “fake” meat.
+
+If so, why not further tap into this sentiment by giving consumers of a given product more “skin in the game” by issuing utility or governance tokens each time they purchase the product? An example of utility could be a structure where limited editions of the product can only be purchased in these tokens. The governance angle, more interesting to us, would mean that the consumers have varying degrees of actual input into the direction of the product, perhaps voting on new colors, flavors, or collaborations.
+
+The “community-driven” model is “definitely something”. It creates a framework where the consumer continues to go back to the merchant, to buy the product again and again, and even bring in new members. We see this with brands like Nike and Lululemon, but these community bonds are rarely tangible and often limited to each brand’s exclusive locale of loyalty points.
+
+By introducing blockchain functionality such that every purchase comes with a governance token, we make the community bonds built around a product more tangible and actionable. Furthermore, the community is brought to light before the entire blockchain ecosystem, allowing for potentially exponential growth. This is the shift from limited ecosystems, like the digital-gold-to-fiat system from World of Warcraft, to the much greater open-source blockchain market, such as with SLP/AXS from Axie Infinity; the trading volumes, rate of growth, and total impact is immeasurably greater in the latter case.
+
+As for technical specifics, $SBT.sol is tied to the claim process and this means that only those who have SBTs in their wallet can interact with it successfully. Since each SBT can only be used to initiate one claim, this means that the wallet owner needs to hold unclaimed SBTs in their wallet in order to complete a claim and receive tokens from $SBT.sol.
+
+The exact specifications for what kind of token is issued by $SBT.sol whenever a product is claimed can be determined by the merchant.
+
+The core idea here is that giving the consumer “skin in the game” can unlock tremendous growth and open new network effects to the world of consumer goods. As mentioned, for any given product, the consumer is the ultimate driver for the success of the product and we want to align the consumer’s incentives towards the long-term success of the product.
+
+## TrunkNFT.sol – owning the product on-chain
+
 
 This contract issues BranchSBTs, which are soul-bound tokens that represent the everyday consumer product being bought and sold. Why soul-bound? Because everyday consumer products are not traded or collected; they are bought to be used, and the soul-bound token acts as both the representation and the receipt for the everday consumer product.
 
