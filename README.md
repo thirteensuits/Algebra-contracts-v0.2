@@ -22,7 +22,8 @@ There are four smart contracts in the Algebra framework and they are described a
 
 ## BranchSBT.sol – representing the product on the blockchain
 
-
+**BranchSBT.sol is the smart contract which provides representation for the product on the blockchain, and to purchase one unit of the product, the consumer mints a soul-bound token (“SBT”) from this contract.
+**
 
 
  - BranchSBT.sol --
