@@ -22,8 +22,19 @@ There are four smart contracts in the Algebra framework and they are described a
 
 ## BranchSBT.sol – representing the product on the blockchain
 
-**BranchSBT.sol is the smart contract which provides representation for the product on the blockchain, and to purchase one unit of the product, the consumer mints a soul-bound token (“SBT”) from this contract.
-**
+**BranchSBT.sol is the smart contract which provides on-chain representation for the product; to purchase one unit of the product, the consumer mints one soul-bound token (“SBT”) from this contract.**
+
+The product, as the core unit of commerce, needs representation on the blockchain. Without having on-chain representation of a given product, we have no means to utilize blockchain functionalities to the commerce of said product; we cannot determine who is the merchant and who is the consumer; we have no means to seamlessly determine when the product is sold or how much of the product is sold; etc.
+
+In commerce today, the barcode provides representation for the product to be recognized by point-of-sale devices, warehouses, and e-commerce data servers. We can recreate what the barcode accomplishes on the blockchain with a BranchSBT smart contract.
+
+Each product is injectively tied to a BranchSBT contract. Any time a consumer wants to purchase the product they mint an SBT from the product’s BranchSBT contract. One SBT represents one unit of the product and undergoes a claim process whenever the consumer wants to receive the physical version of the product.
+
+Why SBTs? Why not NFTs?
+
+Because everyday consumer products are not bought to be traded or collected; they are bought to be used. Although tradable products are valuable, we want to focus on building a framework for consumption and including a speculative element can be distracting to this purpose.
+
+In addition to acting as the on-chain representative for one unit of the product, the SBT also remains in the wallet of the consumer as a receipt of their purchase.
 
 
  - BranchSBT.sol --
