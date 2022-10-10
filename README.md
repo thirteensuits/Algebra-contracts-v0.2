@@ -1,10 +1,10 @@
-# Algebra Smart Contracts -- reimagining cash flow and realigning incentives for everyday consumer products
+# Algebra Smart Contracts -- reimagining the commerce of everyday products
 
-This is Version 0.2 of the Algebra Smart Contracts, meant to create the optimal framework for how transactions for everyday consumer products should be executed on-chain.
+This is Version 0.2 of the Algebra Smart Contracts, exploring new and more efficient ways to buy and sell everyday products by re-aligning incentives using blockchain technology.
 
-Many thanks to the OpenZeppelin team as well as to YouTube and its creators who enable the public to learn how to code for free.
+Many thanks to OpenZepellin.
 
-## Smart Contracts
+## Foreword
 
 There are 4 smart contracts that make up the Algebra framework and are described as follows:
 
