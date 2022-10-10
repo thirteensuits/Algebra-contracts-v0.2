@@ -64,6 +64,17 @@ The core idea here is that giving the consumer “skin in the game” can unlock
 
 ## TrunkNFT.sol – owning the product on-chain
 
+**TrunkNFT.sol is the smart contract which issues NFTs that represent an ownership position of the product.**
+
+Instead of using ERC-20 tokens to mimic equity ownership, we use NFTs to resemble something closer to a Board of Directors, where each holder has a certain degree of responsibility and can also memetically display their ownership if they choose to do so. Like any other ownership position, the NFT can be subject to speculation and can be bought and sold.
+
+An NFT ownership structure is not intended to replace the governance token system and does not preclude the possibility of also issuing ERC-20 tokens to represent ownership, or "governance" (can be the $SBT token, for example). Rather, our purpose here is to make each ownership position more identifiable and therefore introduce greater responsibility. This is why the mechanism of the Board of Directors was introduced to corporate structures in the first place, and for the most part the structure has been helpful in delivering positive results.
+
+How each ownership position is attained can be determined on a case-by-case basis by the relevant parties; perhaps free mints can be given to operators while a certain price is set for early investors. However, the TrunkNFT.sol requires that a hard cap to the number of ownership NFTs be determined for deployment. Further, TrunkNFT.sol places no limitation on how many of the limited NFTs can be held by a single wallet.
+
+## Payment.sol and Payment_Account.sol - trustless paymasters splitting up proceeds
+
+
 
 This contract issues BranchSBTs, which are soul-bound tokens that represent the everyday consumer product being bought and sold. Why soul-bound? Because everyday consumer products are not traded or collected; they are bought to be used, and the soul-bound token acts as both the representation and the receipt for the everday consumer product.
 
