@@ -168,7 +168,7 @@ We are excited at the prospect of introducing functionalities made possible only
 
 We will be the first ones to utilize this framework and gladly invite others to adopt and improve on it as well.
 
-<br></br>
+
 <p align="center">
 <img src="pics/14.gif" width="100%">
 </p>
