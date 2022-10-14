@@ -6,10 +6,11 @@ Many thanks to OpenZepellin.
 
 ## Foreword
 
-First and foremost, it is the consumer and their act of consuming which legitimizes any given item’s status as a “product”. As such, we structure incentives for the consumer, not only to buy, but more importantly to also buy again; and even more valuable, to promote the product. We do this by issuing utility or governance tokens to the consumer for every purchase they make in order to give them some “skin in the game”.
+First and foremost, it is the **consumer** and their **act of consuming** which legitimizes any given item’s status as a “product”. As such, we structure incentives for the consumer, not only to buy, but more importantly to also buy again; and even more valuable, to promote the product. We do this by issuing utility or governance tokens to the consumer for every purchase they make in order to give them some “skin in the game”.
 
+<br></br>
 <p align="center">
-<img src="pics/1.jpg" width="75%">
+<img src="pics/1.jpg" width="100%">
 </p>
 
 Next, by providing on-chain representations of products, we enable transactions for products to be executed on-chain and bring trustless transparency to transaction data and therefore to sales performance.
