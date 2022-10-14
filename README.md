@@ -8,7 +8,6 @@ Many thanks to OpenZepellin.
 
 First and foremost, it is the **consumer** and their **act of consuming** which legitimizes any given item’s status as a “product”. As such, we structure incentives for the consumer, not only to buy, but more importantly to also buy again; and even more valuable, to promote the product. We do this by issuing utility or governance tokens to the consumer for every purchase they make in order to give them some “skin in the game”.
 
-<br></br>
 <p align="center">
 <img src="pics/1.jpg" width="100%">
 </p>
@@ -16,13 +15,13 @@ First and foremost, it is the **consumer** and their **act of consuming** which 
 Next, by providing on-chain representations of products, we enable transactions for products to be executed on-chain and bring trustless transparency to transaction data and therefore to sales performance.
 
 <p align="center">
-<img src="pics/2.png" width="75%">
+<img src="pics/2.png" width="100%">
 </p>
 
 In an environment where sales performance is transparent and open, merchants are incentivized to build products that the market actually wants rather than to build narratives that sound good to VCs. The market experienced this with the slew of consumer brands IPOs in the past three years, when the actual sales performance for many of the brands with the hottest narratives finally became public, and the reveal of their dismal performance consequently led to tens of billions of dollars in investor value being completely wiped out.
 
 <p align="center">
-<img src="pics/3.png" width="75%">
+<img src="pics/3.png" width="100%">
 </p>
 
 It turns out that the capital market is more interested in actual sales performance than in narratives; and it turns out the consumer market was not actually interested in the products created under supposedly popular narratives. Total catastrophe, with tens of billions of dollars and tens of millions of labor hours misallocated and wasted.
@@ -30,7 +29,7 @@ It turns out that the capital market is more interested in actual sales performa
 It is in the interest of the investor to invest into products that the market actually wants. It is in the interest of the merchant to have the capital necessary to build the best products possible. It is in the interest of the market to have the best products possible. These interests are aligned when we bring transparency to sales performance. We see this in action with publicly listed companies and with blockchain adoption we can bring this dynamic to early stage consumer companies too.
 
 <p align="center">
-<img src="pics/4.png" width="75%">
+<img src="pics/4.png" width="100%">
 </p>
 
 Although there may be some perception that such a transparent environment is too tough for many merchants, if transparent sales performance can lead to decentralized fundraising, then merchants confident in the products they bring to the market are incentivized to participate. This is, after all, how publicly traded companies operate.
@@ -68,7 +67,7 @@ Before jumping into technical details, let’s take a brief look at the consumer
 The most valuable consumer goods company in the world is Kweichow Moutai (SHA: 600519) with a ~2.4T RMB market cap, equivalent to roughly 340M USD, and 10% higher than LVMH (EPA: MC).
 
 <p align="center">
-<img src="pics/6.png" width="75%">
+<img src="pics/6.png" width="100%">
 </p>
 
 Why?
@@ -76,7 +75,7 @@ Why?
 The retail investor, to whom Moutai has social value, wants a piece of the action; perhaps they cannot afford a bottle of real Moutai, but they nonetheless want “skin the game” and therefore buy the stock. In addition to “believing in the company” and therefore capturing potential financial upside, the retail investor is able to generate the same internal validation that comes from buying a Moutai product. Instead of being able to self-identify as “the person who buys Moutai”, they can self-identify as “the person who owns a piece of Moutai”. Close enough, or maybe even better?
 
 <p align="center">
-<img src="pics/7.jpg" width="75%">
+<img src="pics/7.jpg" width="100%">
 </p>
 
 A tremendous driver for the consumption of consumer goods is the sense of identity that the consumer derives from their purchase. This is not limited to luxury goods; we also see this in basic food choices, for example in the identities that are built around one’s aversion to meat or, on the other side, to “fake” meat.
@@ -84,7 +83,7 @@ A tremendous driver for the consumption of consumer goods is the sense of identi
 If so, why not further tap into this sentiment by giving consumers of a given product more “skin in the game” by issuing utility or governance tokens each time they purchase the product? An example of utility could be a structure where limited editions of the product can only be purchased in these tokens. The governance angle, more interesting to us, would mean that the consumers have varying degrees of actual input into the direction of the product, perhaps voting on new colors, flavors, or collaborations.
 
 <p align="center">
-<img src="pics/8.png" width="75%">
+<img src="pics/8.png" width="100%">
 </p>
 
 The “community-driven” model is “definitely something”. It creates a framework where the consumer continues to go back to the merchant, to buy the product again and again, and even bring in new members. We see this with brands like Nike and Lululemon, but these community bonds are rarely tangible and often limited to each brand’s exclusive locale of loyalty points.
@@ -169,6 +168,7 @@ We are excited at the prospect of introducing functionalities made possible only
 
 We will be the first ones to utilize this framework and gladly invite others to adopt and improve on it as well.
 
+<br></br>
 <p align="center">
-<img src="pics/14.gif" width="75%">
+<img src="pics/14.gif" width="100%">
 </p>
